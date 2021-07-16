@@ -1,0 +1,26 @@
+.header {
+
+    &__logo {
+
+        img {
+            
+        }
+
+    }
+
+    &__menu { //Mobile menu
+
+        > span {
+            display:block;
+            width: 26px;
+            height: 3px;
+            background-color: $darkBlue;
+            // background-color: #ad03fc;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+
+            }
+        }
+    }
+}
