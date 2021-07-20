@@ -3,6 +3,9 @@ Author: Jason Kingston
 */
 
 .header {
+    nav {
+        padding: 24px;
+    }
 
     &__logo {
 
@@ -26,5 +29,17 @@ Author: Jason Kingston
 
             }
         }
+    }
+
+    &__links {
+        a {
+            font-size: $font-small;
+            color: $grayishBlue;
+        }
+    }
+
+    &__cta {
+        font-size: $font-small;
+
     }
 }
