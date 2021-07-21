@@ -4,12 +4,14 @@ Author: Jason Kingston
 
 .header {
     nav {
-        padding: 24px;
+        padding: 1.0625rem 1.5rem;
     }
 
     &__logo {
 
         img {
+            width: 8.8125rem;
+            height: 1.375rem;
             
         }
 
@@ -32,14 +34,25 @@ Author: Jason Kingston
     }
 
     &__links {
+        border: 1px solid red;
         a {
             font-size: $font-small;
             color: $grayishBlue;
+            transition: color 200ms ease-in-out;
+        
+            &:not(:last-child) {
+                margin-right: 32px;
+            }
+
+            &:hover {
+                color: $darkBlue;
+            }
         }
     }
 
     &__cta {
         font-size: $font-small;
+
 
     }
 }
